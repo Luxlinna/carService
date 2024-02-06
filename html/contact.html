@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Use Remixicon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.7.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../css/contact.css">
+    <!-- used swiperjs.com and take code from "Use swiper from CDN" -->
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/> 
+    <title>Car Service</title>
+</head>
+<body>
+    <!-- === HEADER === -->
+    <header class="contact-us__header">
+        <nav>
+            <div class="nav__bar">
+                <div class="logo nav__logo">
+                    <a href="../index.html"><img src="../assets/logo.png" alt="logo"></a>
+                </div>
+                <div class="nav__menu__btn" id="menu-btn">
+                    <i class="ri-menu-3-line"></i>
+                </div>
+            </div>
+            <ul class="nav__links" id="nav-links">
+                <li><a href="../index.html">HOME</a></li>
+                <li><a href="./about.html">ABOUT</a></li>
+                <li><a href="./services.html">SERVICES</a></li>
+                <li><a href="./appointment.html">APPOINTMENT</a></li>
+                <button class="btn"><a href="./contact.html" class="active-link">Contact Us</a></button>
+            </ul>
+        </nav>
+        <div class="section__container header__container" id="home">
+            <div class="header__content header__content-gap">
+                <h1>Contact Us</h1>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- === CONTACT US === -->
+        <section class="contact-us__section" id="contact">    
+            <h2 class="section__subheader">Get in Touch</h2>
+            <h1 class="section__header">Have questions or need to schedule an appointment?</h1>
+            <p class="section__description">Contact us today. Our friendly team is ready to assist you.</p>
+            <div class="contact-us__container contact-us__grid">
+                <div class="contact-us__content contact-us__border">
+                    <h3 class="contact-us__title">
+                        <i class="ri-chat-3-line">Talk to me</i>
+                    </h3>
+                    <div class="contact-us__info">
+                        <div class="contact-us__data">
+                            <span class="contact-us__data-title">Whatsapp</span>
+                            <span class="contact-us__data-info">+46 702498438</span>
+                            <!-- Insert number with country code -->
+                            <a href="https://api.whatsapp.com/send?phone=46707383361&text=Hello" target="_blank" class="contact-us__btns btn">
+                                Write me <i class="ri-arrow-right-line"></i>
+                            </a>
+                        </div>
+                        <div class="contact-us__data">
+                            <span class="contact-us__data-title">Messenger</span>
+                            <span class="contact-us__data-info">@Luxlinna</span>
+                            <a href="https://m.me/Luxlinna" target="_blank" class="contact-us__btns btn">
+                                Write me <i class="ri-arrow-right-line"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-us__content contact-us__border">
+                    <h3 class="contact-us__title">
+                        <i class="ri-send-plane-fill"> Write me your services and appoitment</i>
+                    </h3>
+                    <form action="" class="contact-us__form" id="contact-form">
+                        <div class="contact-us__form-div">
+                            <label class="contact-us__form-tag">Name</label>
+                            <input type="text" name="user_name" 
+                            required placeholder="Write your name" 
+                            class="contact-us__form-input" id="contact-name">
+                        </div>
+                        <div class="contact-us__form-div">
+                            <label class="contact-us__form-tag">Phone number</label>
+                            <input type="phone" name="user_phone" 
+                            required placeholder="Write your phone number" 
+                            class="contact-us__form-input" id="contact-phone">
+                        </div>
+                        <div class="contact-us__form-div">
+                            <label class="contact-us__form-tag">Email</label>
+                            <input type="email" name="user_email" 
+                            required placeholder="Write your email" 
+                            class="contact-us__form-input" id="contact-email">
+                        </div>
+                        <div class="contact-us__form-div contact-us__form-area">
+                            <label class="contact-us__form-tag">Service</label>
+                            <textarea name="user_treatment" placeholder="Write your appoitment" class="contact-us__form-input" id="contact-service"></textarea>
+                        </div>
+                        <p class="contact-us__message" id="contact-message"></p>
+                        <button type="submit" class="contact-us__btns btn">
+                            Submit <i class="ri-arrow-right-up-line"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="section__container subscribe__container">
+            <div class="subscribe__content">
+                <p class="section__subheader">OUR NEWSLETTER</p>
+                <h2 class="section__header">Subscribe To Our Newsletter</h2>
+                <p class="section__description">
+                    Subscribe to our newsletter and receive exclusive content,
+                    expert insights, and special offers deliverd directly to your inbox.
+                </p>
+            </div>
+            <div class="subscribe__form">
+                <form action="/">
+                    <input type="text" placeholder="Your Email" />
+                    <button class="btn"><a href="./contact.html">Subscribe</a></button>
+                </form>
+            </div>
+        </div>
+        <div class="section__container footer__container" id="contact">
+            <div class="footer__col">
+                <div class="logo footer__logo">
+                    <a href="../index.html"><img src="../assets/logo.png" alt="logo"></a>
+                </div>
+                <p class="section__description">
+                    With a rich legacy spanning 25 years, our commitment 
+                    to excellence in car servicing is unwavering.
+                </p>
+                <ul class="footer__socials">
+                    <li>
+                        <a href="#"><i class="ri-facebook-fill"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="ri-google-fill"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="ri-instagram-line"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="ri-youtube-line"></i></a>
+                    </li>
+                </ul>
+            </div> 
+            <div class="footer__col">
+                <h4>Our Services</h4>
+                <ul class="footer__links">
+                    <li><a href="./services.html">Skilled mechanics</a></li>
+                    <li><a href="./services.html">Routine Maintenance</a></li>
+                    <li><a href="./services.html">Customized Solutions</a></li>
+                    <li><a href="./services.html">Competitive Pricing</a></li>
+                    <li><a href="./services.html">Satisfaction Guaranteed</a></li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <h4>Contact Info</h4>
+                <ul class="footer__links">
+                    <li>
+                        <p>
+                            Experience the magic of a rejuvenated ride as we pay with precision care
+                        </p>
+                    </li>
+                    <li>
+                        <p>Phone: <span>+46 070 1234567</span></p>
+                    </li>
+                    <li>
+                        <p>Email: <span>info@carserving.com</span></p>
+                    </li>
+                </ul>
+            </div>
+        </div>   
+    </footer>
+    <!-- === SCROLL UP === -->
+    <a href="" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line"></i> 
+    </a>
+    <div class="footer__bar">
+        Copyright &copy; 2024 Linna Y. Fullstack Developer. All rights reserved.
+    </div>
+
+    <!-- === MAPS API === -->
+    <!-- Include the Google Maps JavaScript API with your API key -->
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAOjocMZndgFwyt6VSrLxpaee97oAMNjkI&callback=initMap">
+    </script>
+    <!-- === SCROLL REVEAL === -->
+    <!-- Used https://scrollrevealjs.org/guide/hello-world.html -->
+    <script src="https://unpkg.com/scrollreveal"></script> 
+    <!-- Swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- === EMAIL JS === -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="../main.js"></script>
+</body>
+</html>

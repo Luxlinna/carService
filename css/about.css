@@ -1,0 +1,94 @@
+.about__header{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../assets/about.jpg");
+    width: 100%;
+    height: 30.8rem;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.about {
+    width: 100%;
+}
+.about__container {
+    display: grid;
+    justify-content: space-between;
+    gap: 5rem;
+    padding: 5rem 1rem;
+    margin: auto;
+}
+.about__image {
+    max-width: 500px;
+    margin: auto;
+}
+.about__image img{
+    height: 300px;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+}
+.section {
+    padding-block: 2.5rem;
+    padding: 6.75rem 0 2rem;
+}
+
+.section__border {
+    border-block: 1px solid var(--first-color);
+}
+/* Why us */
+.whyus__container {
+    text-align: center;
+}
+.whyus__card {
+    max-width: 600px;
+    margin: auto;
+    margin-bottom: 3rem;
+}
+.whyus__card img {
+    width: 300px;
+    height: 200px;
+    margin: auto;
+    margin-bottom: 1rem;
+    border-radius: 15px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, .2);
+}
+.whyus__card p {
+    margin: 0 2rem 1rem 2rem;
+    color: var(--secondary-color-dark);
+}
+.whyus__card h4 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+/* ========== SCREEN width > 480px ========== */
+@media (width > 480px) {
+    .about__image img{
+        height: 350px;
+        border: 2px solid rgba(0, 0, 0, 0.3);
+        border-radius: 15px;
+    }
+    .about__content h1 {
+        font-size: 4rem;
+        line-height: 5rem;
+    }
+    .about__grid {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(2, 1fr);
+    }   
+}
+
+/* ========== SCREEN width > 768px ========== */
+@media (width > 768px) {
+    .about__image img {
+        width: 400px;
+    }
+}
+
+/* ========== SCREEN width > 1024px ========== */
+@media (width > 1024px) {
+    .about__image img {
+        width: 500px;
+    }
+}

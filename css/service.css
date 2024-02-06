@@ -1,0 +1,39 @@
+.services__header{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../assets/service.jpg");
+    width: 100%;
+    height: 30.8rem;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.services {
+    padding-top: 5rem;
+}
+.services__container {
+    display: grid;
+    justify-content: space-between;
+    gap: 5rem;
+    padding: 5rem 1rem;
+    margin: auto;
+}
+.services__image img{
+    max-width: 500px;
+    height: 350px;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    margin: auto;
+}
+.service__gap {
+    margin-bottom: 2rem;
+}
+.services__container, .services__content {
+    text-align: left;
+}
+
+/* ========== SCREEN width > 480px ========== */
+@media (width > 480px) {
+    .services__grid {
+        grid-template-columns: repeat(2, 1fr);
+    } 
+}
