@@ -33,9 +33,9 @@
 }
 .contact-us__title{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    column-gap: .5rem;
+    /* justify-content: center; */
+/*     align-items: center;
+ */    column-gap: .5rem;
     font-size: .813rem;
     font-weight: 700;
     margin-bottom: 2.5rem;
@@ -168,7 +168,10 @@
         display: grid;
         gap: 1.5rem;
         grid-template-columns: repeat(2, 1fr);
-       } 
+    } 
+    .contact-us__title i{
+        font-size: 1.2rem;
+    }
 }
 
 /* ========== SCREEN width > 1024px ========== */

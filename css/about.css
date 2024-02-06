@@ -11,9 +11,7 @@
     width: 100%;
 }
 .about__container {
-    display: grid;
-    justify-content: space-between;
-    gap: 5rem;
+    /* display: grid; */
     padding: 5rem 1rem;
     margin: auto;
 }
@@ -72,11 +70,7 @@
         font-size: 4rem;
         line-height: 5rem;
     }
-    .about__grid {
-        display: grid;
-        justify-content: center;
-        grid-template-columns: repeat(2, 1fr);
-    }   
+      
 }
 
 /* ========== SCREEN width > 768px ========== */
@@ -84,6 +78,15 @@
     .about__image img {
         width: 400px;
     }
+    .about__container {
+        display: grid;
+        justify-content: space-between;
+        gap: 5rem;
+    }
+    .about__grid {
+        justify-content: center;
+        grid-template-columns: repeat(2, 1fr);
+    } 
 }
 
 /* ========== SCREEN width > 1024px ========== */
