@@ -33,7 +33,7 @@
             </ul>
         </nav>
         <div class="section__container header__container" id="home">
-            <div class="header__content header__content-gap">
+            <div class="header__content section__header-gap">
                 <h1>Contact Us</h1>
             </div>
         </div>
@@ -92,7 +92,10 @@
                         </div>
                         <div class="contact-us__form-div contact-us__form-area">
                             <label class="contact-us__form-tag">Service</label>
-                            <textarea name="user_treatment" placeholder="Write your appoitment" class="contact-us__form-input" id="contact-service"></textarea>
+                            <textarea name="user_service" 
+                                placeholder="Write your appoitment" 
+                                class="contact-us__form-input" id="contact-service">
+                            </textarea>
                         </div>
                         <p class="contact-us__message" id="contact-message"></p>
                         <button type="submit" class="contact-us__btns btn">
@@ -115,10 +118,13 @@
                 </p>
             </div>
             <div class="subscribe__form">
-                <form action="/">
-                    <input type="text" placeholder="Your Email" />
-                    <button class="btn"><a href="./contact.html">Subscribe</a></button>
-                </form>
+                <h2 class="section__subheader">SUBSCRIBE FOR SPECIAL OFFER !!!</h2>
+                    <p class="section__description">Get the latest offers and notifications by entering your email below:</p>
+                    <div>
+                        <input type="email" id="email-input" placeholder="Your Email" required>
+                        <button class="btn" id="subscribe-btn" onclick="subscribe()">Subscribe</button>            
+                    </div>
+                <p id="subscription-message"></p>
             </div>
         </div>
         <div class="section__container footer__container" id="contact">
@@ -180,19 +186,16 @@
     <div class="footer__bar">
         Copyright &copy; 2024 Linna Y. Fullstack Developer. All rights reserved.
     </div>
-
-    <!-- === MAPS API === -->
-    <!-- Include the Google Maps JavaScript API with your API key -->
-    <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAOjocMZndgFwyt6VSrLxpaee97oAMNjkI&callback=initMap">
-    </script>
     <!-- === SCROLL REVEAL === -->
     <!-- Used https://scrollrevealjs.org/guide/hello-world.html -->
+    <!-- <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script> -->
     <script src="https://unpkg.com/scrollreveal"></script> 
-    <!-- Swiper -->
+    <!-- === SWIPER === -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- === EMAIL JS === -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="../javascript/contact.js"></script>
     <script src="../main.js"></script>
+    <script src="../javascript/subscribe.js"></script>
 </body>
 </html>

@@ -33,8 +33,8 @@
             </ul>
         </nav>
         <div class="section__container header__container" id="home">
-            <div class="header__content header__content-gap">
-                <h1>Welcome to Car Service</h1>
+            <div class="header__content section__header-gap">
+                <h1>Welcome To Car Service</h1>
             </div>
         </div>
     </header>
@@ -169,10 +169,13 @@
                 </p>
             </div>
             <div class="subscribe__form">
-                <form action="/">
-                    <input type="text" placeholder="Your Email" />
-                    <button class="btn"><a href="./contact.html">Subscribe</a></button>
-                </form>
+                <h2 class="section__subheader">SUBSCRIBE FOR SPECIAL OFFER !!!</h2>
+                    <p class="section__description">Get the latest offers and notifications by entering your email below:</p>
+                    <div>
+                        <input type="email" id="email-input" placeholder="Your Email" required>
+                        <button class="btn" id="subscribe-btn" onclick="subscribe()">Subscribe</button>            
+                    </div>
+                <p id="subscription-message"></p>
             </div>
         </div>
         <div class="section__container footer__container" id="contact">
@@ -235,10 +238,13 @@
         Copyright &copy; 2024 Linna Y. Fullstack Developer. All rights reserved.
     </div>
 
+    <!-- Use mail.js for subscription -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="../javascript/subscribe.js"></script>
     <!-- Include the Google Maps JavaScript API with your API key -->
-    <script async defer
+    <!-- <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAOjocMZndgFwyt6VSrLxpaee97oAMNjkI&callback=initMap">
-    </script>
+    </script> -->
     <!-- Scroll Reveal -->
     <script src="https://unpkg.com/scrollreveal"></script> <!-- Used https://scrollrevealjs.org/guide/hello-world.html -->
     <!-- Swiper -->

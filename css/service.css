@@ -19,7 +19,7 @@
 }
 .services__image img{
     max-width: 500px;
-    height: 350px;
+    height: 250px;
     border: 2px solid rgba(0, 0, 0, 0.3);
     border-radius: 10px;
     margin: auto;
@@ -36,4 +36,11 @@
     .services__grid {
         grid-template-columns: repeat(2, 1fr);
     } 
+}
+
+/* ========== SCREEN width > 768px ========== */
+@media (width > 768px) {
+    .services__image img{
+        height: 350px;
+    }
 }

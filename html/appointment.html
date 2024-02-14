@@ -6,6 +6,7 @@
     <!-- Use Remixicon -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.7.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../css/appointment.css">
     <!-- used swiperjs.com and take code from "Use swiper from CDN" -->
     <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/> 
@@ -13,7 +14,7 @@
 </head>
 <body>
     <!-- HEADER -->
-    <header class="header">
+    <header class="appointment__header">
         <nav>
             <div class="nav__bar">
                 <div class="logo nav__logo">
@@ -28,73 +29,48 @@
                 <li><a href="./about.html">ABOUT</a></li>
                 <li><a href="./services.html">SERVICES</a></li>
                 <li><a href="./appointment.html" class="active-link">APPOINTMENT</a></li>
-<!--                 <li><a href="#client">CLIENT</a></li>
- -->                <button class="btn"><a href="./contact.html">Contact Us</a></button>
+                <button class="btn"><a href="./contact.html">Contact Us</a></button>
             </ul>
         </nav>
         <div class="section__container header__container" id="home">
-            <div class="header__content">
-                <h1>We Are Qualified & Professional</h1>
-                <div class="header__btn">
-                    <button class="btn">Read More</button>
-                </div>
+            <div class="header__content section__header-gap">
+                <h1>Make An Appointment With Us</h1>
             </div>
         </div>
     </header>
     <main>
-        <!-- EXPERINCE -->
-        <section class="section__container experience__container" id="about">
-            <div class="experience__image">
-                <img src="./assets/experience.jpg" alt="experience">
+        <!-- APPOINTMENT FORM -->
+        <section class="section__container appointment" id="appointment">
+            <div class="appointment__image">
+                <img src="../assets/appointment-booking.jpg" alt="Appointment Image">
             </div>
-            <div class="experience__content">
-                <p class="section__subheader">WHO WE ARE</p>
-                <h2 class="section__header">We Have 5 Years of Experience In This Field</h2>
-                <p class="section__description">
-                    With a rich legacy spanning 5 years, our commitment to excellence in
-                    car Servicing is unwavering. Our seasoned team bring a wealth of 
-                    experience to ensure your verhicle receives top-noth care. Trust in
-                    our expertise to keep your car running smoothly and safely.
-                </p>
-                <button class="btn">Read More</button>
-            </div>
-        </section>
-        <!-- SERVICE -->
-        <section class="service" id="service">
-            <div class="section__container service__container">
-                <p class="section__subheader">WHY CHOOSE US</p>
-                <h2 class="section__header">Great Car Service</h2>
-                <p class="section__description">
-                    Trust us to keep your automobile running smoothly and reliably.
-                </p>
-                <div class="service__grid">
-                    <div class="service__card">
-                        <img src="./assets/service-1.jpg" alt="service">
-                        <h4>Aligned Wheel</h4>
-                        <p>
-                            Experience smother rides and extended tire life with our wheel alignment service.
-                        </p>
+            <div>
+                <h1 class="section__subheader section__subheader-gap">BOOKING AN APPOINTMENT</h1>
+                <form id="bookingForm" class="appointment__form">
+                    <div class="appointment__form-div">
+                        <label class="appointment__form-tag" for="name">Name:</label>
+                        <input type="text" id="name" placeholder="Write your name" class="appointment__form-input" required>
                     </div>
-                    <div class="service__card">
-                        <img src="./assets/service-2.jpg" alt="service">
-                        <h4>Electrical system</h4>
-                        <p>Elevate car's electrical system to peak performance with specialized expertise.</p>
+                    <div class="appointment__form-div">
+                        <label class="appointment__form-tag" for="email">Email:</label>
+                        <input type="email" id="email" placeholder="Write your email" class="appointment__form-input" required>
                     </div>
-                    <div class="service__card">
-                        <img src="./assets/service-3.jpg" alt="service">
-                        <h4>System Service</h4>
-                        <p>
-                            We utilize cutting-edge diagnostics and techniques to ensure optimal condition.
-                        </p>
+                    <div class="appointment__form-div">
+                        <label class="appointment__form-tag" for="phone">Phone:</label>
+                        <input type="phone" id="phone" placeholder="Write your phone number" class="appointment__form-input" required>
                     </div>
-                    <div class="service__card">
-                        <img src="./assets/service-4.jpg" alt="service">
-                        <h4>Engine Diagnostics</h4>
-                        <p>
-                            Unlock the services of your car's performance with state-of diagnostic services.
-                        </p>
+                    <div class="appointment__form-div">
+                        <label class="appointment__form-tag" for="date">Date:</label>
+                        <input type="date" id="date" class="appointment__form-input" required>
                     </div>
-                </div>
+                    <div class="appointment__form-div">
+                        <label class="appointment__form-tag" for="time">Time:</label>
+                        <input type="time" id="time" class="appointment__form-input" required>
+                    </div>
+                    <button type="submit" class="appointment__btn btn">Book Appointment</button>
+                </form>
+                <div id="confirmation"></div>
+                
             </div>
         </section>
     </main>
@@ -110,16 +86,19 @@
                 </p>
             </div>
             <div class="subscribe__form">
-                <form action="/">
-                    <input type="text" placeholder="Your Email" />
-                    <button class="btn"><a href="./contact.html">Subscribe</a></button>
-                </form>
+                <h2 class="section__subheader">SUBSCRIBE FOR SPECIAL OFFER !!!</h2>
+                <p class="section__description">Get the latest offers and notifications by entering your email below:</p>
+                <div>
+                    <input type="email" id="email-input" placeholder="Your Email" required>
+                    <button class="btn" id="subscribe-btn" onclick="subscribe()">Subscribe</button>            
+                </div>
+                <p id="subscription-message"></p>
             </div>
         </div>
         <div class="section__container footer__container" id="contact">
             <div class="footer__col">
                 <div class="logo footer__logo">
-                    <a href="../index.html"><img src="./assets/logo.png" alt="logo"></a>
+                    <a href="../index.html"><img src="../assets/logo.png" alt="logo"></a>
                 </div>
                 <p class="section__description">
                     With a rich legacy spanning 25 years, our commitment 
@@ -176,14 +155,16 @@
         Copyright &copy; 2024 Linna Y. Fullstack Developer. All rights reserved.
     </div>
 
-    <!-- Include the Google Maps JavaScript API with your API key -->
-    <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAOjocMZndgFwyt6VSrLxpaee97oAMNjkI&callback=initMap">
-    </script>
-    <!-- Scroll Reveal -->
-    <script src="https://unpkg.com/scrollreveal"></script> <!-- Used https://scrollrevealjs.org/guide/hello-world.html -->
-    <!-- Swiper -->
+
+    <!-- === SUBSCRIPTION === -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="../javascript/subscribe.js"></script>
+    <!-- === SCROLL REVEAL === -->
+    <!-- Used https://scrollrevealjs.org/guide/hello-world.html -->
+    <script src="https://unpkg.com/scrollreveal"></script> 
+    <!-- === SWIPER === -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="../main.js"></script>
+    <script src="../javascript/appointment.js"></script>
 </body>
 </html>

@@ -6,6 +6,7 @@
     <!-- Use Remixicon -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.7.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./assets/favicon.jpg" type="image/x-icon">
     <!-- used swiperjs.com and take code from "Use swiper from CDN" -->
     <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/> 
@@ -13,7 +14,7 @@
 </head>
 <body>
     <!-- HEADER -->
-    <header class="header">
+    <header class="header" id="header">
         <nav>
             <div class="nav__bar">
                 <div class="logo nav__logo">
@@ -109,7 +110,7 @@
             </div>
         </section>
         <!-- CUSTOMISATION -->
-        <section class="customisation">
+        <!-- <section class="customisation">
             <div class="section__container customisation__container">
                 <p class="section__subheader">
                     OUR CUSTOMISATION
@@ -141,7 +142,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <!-- PRICES -->
         <section class="section__container price__container" id="price">
             <p class="section__subheader">
@@ -292,11 +293,14 @@
                     expert insights, and special offers deliverd directly to your inbox.
                 </p>
             </div>
-            <div class="subscribe__form">
-                <form action="/">
-                    <input type="text" placeholder="Your Email" />
-                    <button class="btn"><a href="./html/contact.html">Subscribe</a></button>
-                </form>
+            <div class="subscribe__form subscribe__content">
+                <h2 class="section__subheader">SUBSCRIBE FOR SPECIAL OFFER !!!</h2>
+                    <p class="section__description">Get the latest offers and notifications by entering your email below:</p>
+                    <div>
+                        <input type="email" id="email-input" placeholder="Your Email" required>
+                        <button class="btn" id="subscribe-btn" onclick="subscribe()">Subscribe</button>            
+                    </div>
+                <p id="subscription-message"></p>
             </div>
         </div>
         <div class="section__container footer__container" id="contact">
@@ -305,7 +309,7 @@
                     <a href="./index.html"><img src="./assets/logo.png" alt="logo"></a>
                 </div>
                 <p class="section__description">
-                    With a rich legacy spanning 25 years, our commitment 
+                    With a rich legacy spanning 5 years, our commitment 
                     to excellence in car servicing is unwavering.
                 </p>
                 <ul class="footer__socials">
@@ -352,14 +356,19 @@
         </div>   
     </footer>
     <!-- === SCROLL UP === -->
-    <a href="" class="scrollup" id="scroll-up">
+    <a href="#header" class="scrollup" id="scroll-up">
         <i class="ri-arrow-up-line"></i> 
     </a>
     <div class="footer__bar">
         Copyright &copy; 2024 Linna Y. Fullstack Developer. All rights reserved.
     </div>
 
+    <!-- Use mail.js for subscription -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="./javascript/subscribe.js"></script>
     <!-- Include the Google Maps JavaScript API with the API key -->
+    <!-- MAP API KEY : AIzaSyAOjocMZndgFwyt6VSrLxpaee97oAMNjkI -->
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAOjocMZndgFwyt6VSrLxpaee97oAMNjkI&callback=initMap" async defer></script> -->
     <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAOjocMZndgFwyt6VSrLxpaee97oAMNjkI&callback=initMap">
     </script>
