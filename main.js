@@ -81,57 +81,6 @@ function initMap() {
     });
 };
 
-/* === EMAIL JS === */
-/* document.addEventListener('DOMContentLoaded', function() {
-    const contactForm = document.getElementById('contact-form');
-    if (contactForm) {
-        const contactName = document.getElementById('contact-name');
-        const contactPhone = document.getElementById('contact-phone');
-        const contactEmail = document.getElementById('contact-email');
-        const contactService = document.getElementById('contact-service');
-        const contactMessage = document.getElementById('contact-message');
-
-        const sendEmail = (e) => {
-            e.preventDefault();
-            // Check if the field has a value
-            if (contactName.value === '' || contactPhone.value === '' || contactEmail.value === '' || contactService.value === '') {
-                // Add and remove color
-                contactMessage.classList.remove('color-blue');
-                contactMessage.classList.add('color-red');
-                // Show message
-                contactMessage.textContent = 'Please fill out all fields 📋';
-            } else {
-                // Service ID - template ID - #form -publickey
-                emailjs.sendForm('service_e6xs64m', 'template_5ko303l', '#contact-form', 'ye4t_YLIfjjewn-VZ')
-                    .then(() => {
-                        // Show message and add color
-                        contactMessage.classList.remove('color-red');
-                        contactMessage.classList.add('color-blue');
-                        contactMessage.textContent = 'Message sent ✅';
-                        // Remove message after 5 seconds
-                        setTimeout(() => {
-                            contactMessage.textContent = '';
-                        }, 5000);
-                    })
-                    .catch((error) => {
-                        console.error('Error sending email:', error);
-                        alert('Oops! Something went wrong...');
-                    });
-                // Clear the input fields
-                contactName.value = '';
-                contactPhone.value = '';
-                contactEmail.value = '';
-                contactService.value = '';
-            }
-        };
-
-        contactForm.addEventListener('submit', sendEmail);
-    } else {
-        console.error("Element with ID 'contact-form' not found.");
-        console.log("Contact-form:", contactForm);
-    }
-}); */
-
 /* === SHOW SCROLL UP === */
 const scrollUp = () =>{
     const scrollUp = document.getElementById('scroll-up')
