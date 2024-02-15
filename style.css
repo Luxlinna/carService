@@ -607,6 +607,9 @@ nav {
     .section__subheader-gap {
         margin-top: 0;
     }
+    .section__header-gap {
+        margin-top: 0;
+    }
     .header__content-gap {
         margin-top: 0;
     }
