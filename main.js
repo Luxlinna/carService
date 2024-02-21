@@ -63,7 +63,7 @@ let swiperWhyUs = new Swiper(".swiper", {
 
 /* === SHOW MAP FUNCTION=== */
 function initMap() {
-    // Replace with your store's latitude and longitude
+    // Replace with the store's latitude and longitude
     // Get google Maps API Key :  https://console.cloud.google.com/
     // var storeLocation = { lat: 40.7128, lng: -74.0060 };
 

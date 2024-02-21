@@ -441,17 +441,19 @@ nav {
     align-items: center;
     gap: 1rem;
 }
-.footer__socials a {
+.footer__socials a{
+    display: inline-block;
     padding: 5px 10px;
     font-size: 1.25rem;
     color: var(--text-light);
     background-color: var(--secondary-color);
     border-radius: 50%;
-    transition: 0.3s;
+    transition: transform 0.3s;
 }
 .footer__socials a:hover {
     color: var(--primary-color);
     background-color: var(--white);
+    transform: translateY(-5%);
 }
 .footer__col h4 {
     margin-bottom: 2rem;
@@ -616,8 +618,8 @@ nav {
 }
 
 /* ========== SCREEN width > 1024px ========== */
-@media (width > 1024px) {
+/* @media (width > 1024px) {
     .price__grid {
         gap: 2rem;
     }
-}
+} */
